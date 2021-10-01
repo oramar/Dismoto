@@ -34,11 +34,15 @@ public class FrmUsuario extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        TxtUsuario = new javax.swing.JTextField();
-        TxtClave = new javax.swing.JPasswordField();
         BtnCancelar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         BtnAceptar = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        TxtClave = new javax.swing.JPasswordField();
+        PnlContraseña = new javax.swing.JPanel();
+        TxtUsuario = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ingreso al usuario");
@@ -47,22 +51,16 @@ public class FrmUsuario extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setBackground(java.awt.SystemColor.window);
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 102, 0), 5));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 0));
         jLabel1.setText("Usuario:");
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 0));
         jLabel2.setText("Clave:");
-
-        TxtUsuario.setBackground(new java.awt.Color(255, 255, 255));
-        TxtUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        TxtUsuario.setToolTipText("");
-
-        TxtClave.setBackground(new java.awt.Color(255, 255, 255));
-        TxtClave.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        TxtClave.setToolTipText("");
 
         BtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dismoto/utils/imagenes/cancel.png"))); // NOI18N
         BtnCancelar.setText("Cancelar");
@@ -73,7 +71,7 @@ public class FrmUsuario extends javax.swing.JFrame {
         });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dismoto/utils/imagenes/userk.png"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         BtnAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dismoto/utils/imagenes/okAceptar.png"))); // NOI18N
         BtnAceptar.setText("Aceptar");
@@ -83,49 +81,102 @@ public class FrmUsuario extends javax.swing.JFrame {
             }
         });
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
+        jPanel2.setForeground(new java.awt.Color(255, 0, 0));
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dismoto/utils/imagenes/password_3715.png"))); // NOI18N
+        jLabel4.setToolTipText("");
+
+        TxtClave.setBackground(new java.awt.Color(255, 255, 255));
+        TxtClave.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TxtClave.setToolTipText("");
+        TxtClave.setBorder(null);
+        TxtClave.setSelectionColor(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TxtClave))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(TxtClave, javax.swing.GroupLayout.Alignment.TRAILING)
+        );
+
+        PnlContraseña.setBackground(new java.awt.Color(255, 255, 255));
+        PnlContraseña.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
+        PnlContraseña.setForeground(new java.awt.Color(255, 0, 0));
+
+        TxtUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        TxtUsuario.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TxtUsuario.setToolTipText("");
+        TxtUsuario.setBorder(null);
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dismoto/utils/imagenes/user_84308.png"))); // NOI18N
+        jLabel5.setToolTipText("");
+
+        javax.swing.GroupLayout PnlContraseñaLayout = new javax.swing.GroupLayout(PnlContraseña);
+        PnlContraseña.setLayout(PnlContraseñaLayout);
+        PnlContraseñaLayout.setHorizontalGroup(
+            PnlContraseñaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlContraseñaLayout.createSequentialGroup()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TxtUsuario))
+        );
+        PnlContraseñaLayout.setVerticalGroup(
+            PnlContraseñaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+            .addComponent(TxtUsuario)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(TxtClave))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(TxtUsuario))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BtnAceptar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BtnCancelar)))
-                .addGap(12, 12, 12))
+                        .addComponent(BtnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BtnCancelar))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PnlContraseña, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TxtClave, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BtnCancelar)
-                            .addComponent(BtnAceptar))))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(13, 13, 13)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PnlContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnAceptar)
+                    .addComponent(BtnCancelar))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -136,21 +187,19 @@ public class FrmUsuario extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCancelarActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_BtnCancelarActionPerformed
-
     private void BtnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAceptarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BtnAceptarActionPerformed
+
+    private void BtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_BtnCancelarActionPerformed
 
     
     
@@ -172,11 +221,15 @@ public class FrmUsuario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnAceptar;
     private javax.swing.JButton BtnCancelar;
+    private javax.swing.JPanel PnlContraseña;
     private javax.swing.JPasswordField TxtClave;
     private javax.swing.JTextField TxtUsuario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
