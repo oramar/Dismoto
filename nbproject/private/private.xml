@@ -3,13 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/controller/usuarios/ManejoUsuario.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/controller/usuarios/ManejoGeneral.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/views/usuarios/FrmUsuario.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/views/usuarios/FrmUsuarioss.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/views/usuarios/FrmPrincipal.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/controller/usuarios/InicioSistema.java</file>
-            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/dismoto/views/usuarios/FrmUsuarios.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/model/dao/DaoClientes.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/utils/conexion/ConexionDB.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/views/usuarios/FrmUsuarioss.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/model/interfaces/ICrudDao.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/controller/usuarios/InicioSistema.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/views/usuarios/FrmPrincipal.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/model/interfaces/IDaoCliente.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/controller/usuarios/ManejoUsuario.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/views/usuarios/FrmUsuario.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/model/dto/DtoClientes.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/views/usuarios/FrmUsuarios.java</file>
+            <file>file:/I:/Proyectos%20Java%20-%20Full/Dismoto%20Yamaha/src/sistema/controller/usuarios/ManejoGeneral.java</file>
         </group>
     </open-files>
 </project-private>
